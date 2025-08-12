@@ -11,7 +11,7 @@ export const generateArticle = async (req, res) => {
         // Prefer userId from req.auth, fallback to req.userId if set by middleware
         const userId = (req.auth && req.auth.userId) || req.userId;
         if (!userId) {
-            return res.status(401).json({ success: false, message: "User ID not found. Please provide a valid authentication token." });
+            return res.status(401).json({success: false, message: "User ID not found. Please provide a valid authentication token." });
         }
         const { prompt, length } = req.body;
         const plan = req.plan;
