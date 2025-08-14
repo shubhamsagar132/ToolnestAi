@@ -7,7 +7,7 @@ import aiRouter from "./routes/aiRoutes.js";
 import connectCloudinary from "./configs/cloudinary.js";
 
 const app = express();
-await connectCloudinary()
+await connectCloudinary())
 app.use(cors());
 app.use(express.json());
 app.use(clerkMiddleware());
