@@ -31,7 +31,7 @@ const App = () => {
           <Route path='Remove-background' element={<RemoveBackground />} />
           <Route path='Remove-object' element={<RemoveObject />} />
           <Route path='Review-resume' element={<ReviewResume />} />
-          <Route path='Community' element={<Community />} />
+          <Route path='Community' element={<Community />} />;
         </Route>
       </Routes>
     </div>
